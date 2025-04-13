@@ -72,8 +72,8 @@ function App() {
 
   return (
     <>
-      <div className="  h-screen w-screen flex  gap-10   flex-col items-center justify-center bg-neutral-900">
-        <div className="grid grid-cols-3  gap-10">
+      <div className="  h-screen w-screen flex   gap-10 bg-cover bg-no-repeat  flex-col items-center justify-center bg-[url(/bg-tic-tac-toe-1.png)]">
+        <div className="grid grid-cols-3   gap-10">
           {tablero.map(function (data, index) {
             return (
               <>
@@ -123,14 +123,14 @@ function App() {
             <div className="flex flex-row items-center justify-around  gap-20">
               <div
                 className={`${baseStylePlayers} ${
-                  turn == players.x ? "bg-gray-700" : ""
+                  turn == players.x ? "bg-neutral-800" : ""
                 }`}
               >
                 {players.x}
               </div>
               <div
                 className={`${baseStylePlayers} ${
-                  turn == players.o ? "bg-gray-700" : ""
+                  turn == players.o ? "bg-neutral-800" : ""
                 }`}
               >
                 {players.o}
